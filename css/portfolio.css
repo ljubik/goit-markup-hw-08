@@ -12,7 +12,7 @@ html {
           box-sizing: inherit;
   margin: 0;
   padding: 0;
-  /*outline: 2px solid blue;*/
+  outline: 2px solid blue;
   -webkit-box-sizing: border-box;
   /* Нужно для мобильного WebKit */
   -moz-box-sizing: border-box;
@@ -88,11 +88,38 @@ a:hover, a:focus {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding-left: 31px;
+    padding-right: 31px;
+    background-color: red;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 39px;
+    padding-right: 39px;
+    background-color: blue;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: green;
+  }
 }
 
 .flex {
@@ -112,9 +139,6 @@ header {
 }
 
 .flex-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

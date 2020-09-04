@@ -1,34 +1,42 @@
 .hero {
-  padding-bottom: 200px;
-  padding-top: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header_img_opt.png);
-  max-width: 1600px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+	padding-bottom: 200px;
+	padding-top: 200px;
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header_img_opt.png);
+	max-width: 1600px;
+	margin: 0 auto;
+
+	@include for-size(desktop) {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
 }
 
 .hero-center {
-  text-align: center;
-  margin: 0 auto;
+	text-align: center;
+	margin: 0 auto;
 }
 
 .hero-high-text {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  letter-spacing: 0.06em;
-  color: $light-color;
-  width: 696px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.363;
-  text-transform: uppercase;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  padding-bottom: 30px;
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
+	letter-spacing: 0.06em;
+	color: $light-color;
+	width: 100%;
+	font-weight: 900;
+	font-size: 26px;
+	line-height: 1.363;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: 30px;
+
+	@include for-size(desktop) {
+		font-size: 44px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 696px;
+	}
 }

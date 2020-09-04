@@ -1,28 +1,37 @@
 .benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
+	padding-top: 94px;
+	padding-bottom: 94px;
 
-  p {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $body-color;
-  }
-  h3 {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $dark-color;
-  }
+	p {
+		font-size: 14px;
+		line-height: 1.71;
+		letter-spacing: 0.03em;
+		color: $body-color;
+	}
+	h3 {
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 1.143;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: $dark-color;
+	}
 }
 
 .benefits-list {
-  display: flex;
+	display: flex;
+	flex-wrap: wrap;
+
+	@include for-size(desktop) {
+		display: flex;
+		flex-wrap: nowrap;
+	}
 }
 
 .benefits-item {
-  margin: 10px;
-  width: calc((100% - 30px * 2) / 4);
+	margin: 10px;
+
+	@include for-size(desktop) {
+		width: calc((100% - 30px * 2) / 4);
+	}
 }
