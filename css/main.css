@@ -122,10 +122,12 @@ a:hover, a:focus {
   }
 }
 
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media (min-width: 1200px) {
+  .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .list {
@@ -516,9 +518,15 @@ header {
 }
 
 .we-do {
-  font-weight: bold;
-  letter-spacing: 0.03em;
-  padding-bottom: 94px;
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .we-do {
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    padding-bottom: 94px;
+  }
 }
 
 .we-do-group {
@@ -591,9 +599,26 @@ figure {
   width: 100%;
 }
 
-.we-do-h-text,
-.team-h-text,
-.clients-h-text {
+.we-do-h-text {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .we-do-h-text {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.167;
+    color: #212121;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-bottom: 50px;
+  }
+}
+
+.we-do-h-text .team-h-text,
+.we-do-h-text .clients-h-text {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;

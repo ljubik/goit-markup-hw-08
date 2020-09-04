@@ -111,7 +111,9 @@ a {
 }
 
 .flex {
-	display: flex;
+	@include for-size(desktop) {
+		display: flex;
+	}
 }
 
 .list {

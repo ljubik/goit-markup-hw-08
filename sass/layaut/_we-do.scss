@@ -1,7 +1,11 @@
 .we-do {
-	font-weight: bold;
-	letter-spacing: 0.03em;
-	padding-bottom: 94px;
+	display: none;
+
+	@include for-size(desktop) {
+		font-weight: bold;
+		letter-spacing: 0.03em;
+		padding-bottom: 94px;
+	}
 }
 
 .we-do-group {
@@ -59,16 +63,31 @@ figure {
 	width: 100%;
 }
 
-.we-do-h-text,
-.team-h-text,
-.clients-h-text {
-	font-family: "Roboto", sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 36px;
-	line-height: 1.167;
-	color: $dark-color;
-	text-align: center;
-	letter-spacing: 0.03em;
-	padding-bottom: 50px;
+.we-do-h-text {
+	display: none;
+
+	@include for-size(desktop) {
+		font-family: "Roboto", sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 1.167;
+		color: $dark-color;
+		text-align: center;
+		letter-spacing: 0.03em;
+		padding-bottom: 50px;
+	}
+
+	.team-h-text,
+	.clients-h-text {
+		font-family: "Roboto", sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 1.167;
+		color: $dark-color;
+		text-align: center;
+		letter-spacing: 0.03em;
+		padding-bottom: 50px;
+	}
 }
