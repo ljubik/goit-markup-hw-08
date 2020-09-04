@@ -1,0 +1,87 @@
+.card-gallery {
+  background: $light-color;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  h2 {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $dark-color;
+  }
+
+  p {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 18px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: $body-color;
+  }
+}
+
+.gal-card-img {
+  position: relative;
+}
+
+.gal-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-gallery:hover .gal-card-overlay {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.gal-card-actions {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.card-gallery:hover .gal-card-actions {
+  opacity: 1;
+}
+
+.gal-card-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: $light-color;
+  position: absolute;
+  display: block;
+  left: 24px;
+  right: 24px;
+  top: 63px;
+  bottom: 63px;
+  width: 322px;
+}
+
+.gal-card-info {
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+
+.gallery-txt {
+  display: flex;
+  color: $light-color;
+}

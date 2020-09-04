@@ -1,0 +1,36 @@
+.rectangle1 {
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    /* width: calc((100%-30px * 3) / 4); */
+    background-color: $bkg-lite-color;
+    padding-left: 100px;
+    padding-top: 25px;
+    padding-right: 100px;
+    padding-bottom: 25px;
+  }
+  
+  .img {
+    border-style: none;
+    display: block; /* для прибирання пропусків пiсля інлайн компонентів */
+  }
+  
+  .rectangle1-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+        fill: $icon-color;
+        width: 65px;
+        height: 70px;
+      }
+  }
+  
+  .rectangle1-txt {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+  

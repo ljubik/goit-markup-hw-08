@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="icon" href="./favicon.ico" type="image/x-icon" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
+		<link rel="stylesheet" href="./css/portfolio.min.css" />
+		<title>Web Studio - portfolio</title>
+	</head>
+	<body>
+		<!-- Шапка сайту -->
+		<header>
+			<div class="container flex">
+				<nav class="flex-header">
+					<div class="logo">
+						<!-- <img src="./images/logo.svg" alt="Логотип компанії" /> -->
+						<a href="index.html" title="Main page">
+							<span class="web">Web</span>
+							<span class="studio">Studio</span>
+						</a>
+					</div>
+					<ul class="link-menu list">
+						<li class="item">
+							<a href="https://ljubik.github.io/goit-markup-hw-07/index.html" class="menu-line">Cтудия</a>
+						</li>
+						<li class="item"><a href="portfolio.html" class="menu-line current">Портфолио</a></li>
+						<li class="item"><a href="#contacts" class="menu-line">Контакты</a></li>
+					</ul>
+					<ul class="link-contact list">
+						<li class="item">
+							<a href="mailto:info@devstudio.com" class="link">
+								<span class="link-item">
+									<svg class="icon" width="10" height="16">
+										<use xlink:href="./images/sprite.svg#icon_mail"></use>
+									</svg>
+								</span>
+
+								<span>info@devstudio.com</span>
+							</a>
+						</li>
+						<li class="item">
+							<a href="tel:+380961111111" class="link">
+								<span class="link-item">
+									<svg class="icon" width="10" height="16">
+										<use xlink:href="./images/sprite.svg#icon_mobile"></use>
+									</svg>
+								</span>
+
+								<span>+38 096 111 11 11</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- Основний контент -->
+		<main>
+			<h1 hidden>Портфоліо, галерея робіт</h1>
+			<!-- розділ galery -->
+			<section class="gallery-section" title="Gallery">
+				<div class="container">
+					<ul class="btn-gal-group list">
+						<li class="btn-gal-item"><button class="btn btn-gallery">Все</button></li>
+						<li class="btn-gal-item"><button class="btn btn-gallery">Веб-сайты</button></li>
+						<li class="btn-gal-item"><button class="btn btn-gallery">Приложения</button></li>
+						<li class="btn-gal-item"><button class="btn btn-gallery">Дизайн</button></li>
+						<li class="btn-gal-item"><button class="btn btn-gallery">Маркетинг</button></li>
+					</ul>
+					<div class="gallery">
+						<ul class="gallery-list list">
+							<li class="gal-item">
+								<div class="card-gallery">
+									<div class="gal-card-img">
+										<a href="#">
+											<img src="images/portfolio-1.jpg" alt="Photo portfolio" width="370" height="294" />
+										</a>
+										<div class="gal-card-overlay">
+											<div class="gal-card-actions">
+												<div class="gal-card-text">
+													Технокряк это современная площадка распространения коронавируса. Компании используют эту
+													платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="gal-card-info">
+										<h2 class="gal-title">Технокряк</h2>
+
+										<p class="gal-text">Веб-сайт</p>
+									</div>
+								</div>
+							</li>
+							<li class="gal-item">
+								<div class="card-gallery">
+									<div class="gal-card-img">
+										<a href="#">
+											<img src="images/portfolio-2.jpg" alt="Photo portfolio" width="370" height="294" />
+										</a>
+										<div class="gal-card-overlay">
+											<div class="gal-card-actions">
+												<div class="gal-card-text"></div>
+											</div>
+										</div>
+									</div>
+									<div class="gal-card-info">
+										<h2 class="gal-title">Постер New Orlean vs Golden Star</h2>
+
+										<p class="gal-text">Дизайн</p>
+									</div>
+								</div>
+							</li>
+							<li class="gal-item">
+								<div class="card-gallery">
+									<div class="gal-card-img">
+										<a href="#">
+											<img src="images/portfolio-3.jpg" alt="Photo portfolio" width="370" height="294" />
+										</a>
+										<div class="gal-card-overlay">
+											<div class="gal-card-actions">
+												<div class="gal-card-text"></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="gal-card-info">
+										<h2 class="gal-title">Ресторан Seafood</h2>
+
+										<p class="gal-text">Приложение</p>
+									</div>
+								</div>
+							</li>
+							<li class="gal-item">
+								<div class="card-gallery">
+									<div class="gal-card-img">
+										<a href="#">
+											<img src="images/portfolio-4.jpg" alt="Photo portfolio" width="370" height="294" />
+										</a>
+										<div class="gal-card-overlay">
+											<div class="gal-card-actions">
+												<div class="gal-card-text"></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="gal-card-info">
+										<h2 class="gal-title">Проект Prime</h2>
+
+										<p class="gal-text">Маркетинг</p>
+									</div>
+								</div>
+							</li>
+							<li class="gal-item">
+								<div class="card-gallery">
+									<div class="gal-card-img">
+										<a href="#">
+											<img src="images/portfolio-5.jpg" alt="Photo portfolio" width="370" height="294" />
+										</a>
+										<div class="gal-card-overlay">
+											<div class="gal-card-actions">
+												<div class="gal-card-text"></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="gal-card-info">
+										<h2 class="gal-title">Проект Boxes</h2>
+
+										<p class="gal-text">Приложение</p>
+									</div>
+								</div>
+							</li>
+							<li class="gal-item">
+								<div class="card-gallery">
+									<div class="gal-card-img">
+										<a href="#">
+											<img src="images/portfolio-6.jpg" alt="Photo portfolio" width="370" height="294" />
+										</a>
+										<div class="gal-card-overlay">
+											<div class="gal-card-actions">
+												<div class="gal-card-text"></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="gal-card-info">
+										<h2 class="gal-title">Inspiration has no Borders</h2>
+
+										<p class="gal-text">Веб-сайт</p>
+									</div>
+								</div>
+							</li>
+							<li class="gal-item">
+								<div class="card-gallery">
+									<div class="gal-card-img">
+										<a href="#">
+											<img src="images/portfolio-7.jpg" alt="Photo portfolio" width="370" height="294" />
+										</a>
+										<div class="gal-card-overlay">
+											<div class="gal-card-actions">
+												<div class="gal-card-text"></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="gal-card-info">
+										<h2 class="gal-title">Издание Limited Edition</h2>
+
+										<p class="gal-text">Дизайн</p>
+									</div>
+								</div>
+							</li>
+							<li class="gal-item">
+								<div class="card-gallery">
+									<div class="gal-card-img">
+										<a href="#">
+											<img src="images/portfolio-8.jpg" alt="Photo portfolio" width="370" height="294" />
+										</a>
+										<div class="gal-card-overlay">
+											<div class="gal-card-actions">
+												<div class="gal-card-text"></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="gal-card-info">
+										<h2 class="gal-title">Проект LAB</h2>
+
+										<p class="gal-text">Маркетинг</p>
+									</div>
+								</div>
+							</li>
+							<li class="gal-item">
+								<div class="card-gallery">
+									<div class="gal-card-img">
+										<a href="#">
+											<img src="images/portfolio-2.jpg" alt="Photo portfolio" width="370" height="294" />
+										</a>
+										<div class="gal-card-overlay">
+											<div class="gal-card-actions">
+												<div class="gal-card-text"></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="gal-card-info">
+										<h2 class="gal-title">Growing Business</h2>
+
+										<p class="gal-text">Приложение</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- Нижня частина сайту -->
+		<footer id="contacts">
+			<div class="container">
+				<div class="footer">
+					<ul class="foot-list list">
+						<li class="foot-address">
+							<div class="logo">
+								<a href="index.html" title="Main page">
+									<span class="web">Web</span>
+									<span class="studio-down">Studio</span>
+									<br />
+								</a>
+							</div>
+							<div class="address">
+								<address>г. Киев , пр-т Леси Украинки,26</address>
+
+								<p><a href="mailto:info@example.com" class="down-cont-link">info@example.com</a></p>
+								<p><a href="tel:380991111111" class="down-cont-link">+38 099 111 11 11</a></p>
+							</div>
+						</li>
+						<li class="foot-social">
+							<h4>Присоединяйтесь</h4>
+							<div class="social">
+								<ul class="team-list list">
+									<li class="foot-social-card">
+										<a
+											href="https://instagram.com/"
+											class="social-link"
+											aria-label="Instagram"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<svg class="icon social" width="20" height="20">
+												<use xlink:href="./images/sprite.svg#icon_instagram"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="foot-social-card">
+										<a
+											href="https://twitter.com/"
+											class="social-link"
+											aria-label="Twitter"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<svg class="icon social" width="20" height="20">
+												<use xlink:href="./images/sprite.svg#icon_twitter"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="foot-social-card">
+										<a
+											href="https://facebook.com/"
+											class="social-link"
+											aria-label="Facebook"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<svg class="icon social" width="20" height="20">
+												<use xlink:href="./images/sprite.svg#icon_facebook"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="foot-social-card">
+										<a
+											href="https://linkedin.com/"
+											class="social-link"
+											aria-label="Linkedin"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<svg class="icon social" width="20" height="20">
+												<use xlink:href="./images/sprite.svg#icon_linkedin"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="foot-subscribe">
+							<label for="mail">Подпишитесь на рассылку</label>
+
+							<form action="#" method="post" id="usrform" class="form-subscribe">
+								<input type="email" name="email" class="inpt-mail" id="mail" placeholder="E-mail" />
+								<div class="foot-pos-button">
+									<button class="btn-subscribe" type="submit">
+										Подписаться
+										<svg width="24" height="24">
+											<use href="./images/sprite.svg#telegram"></use>
+										</svg>
+									</button>
+								</div>
+							</form>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

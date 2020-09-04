@@ -1,0 +1,22 @@
+.team {
+  background: $bkg-lite-color;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-container {
+  flex-wrap: nowrap;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-item {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+}

@@ -1,0 +1,24 @@
+@import "./base/normalize.css";
+@import "./utils/variables";
+@import "./base/stand";
+@import "./layaut/header";
+@import "./components/nav";
+@import "./components/logo";
+@import "./components/menu";
+
+@import "./layaut/hero";
+@import "./components/btn-hero";
+@import "./layaut/benefits";
+@import "./components/rechtchangel";
+@import "./layaut/we-do";
+@import "./layaut/team";
+@import "./components/team-card";
+@import "./components/social";
+@import "./layaut/clients";
+
+@import "./layaut/footer";
+@import "./components/foot-btn-subscribe";
+
+@import "./layaut/backdrop-modal";
+@import "./components/modal-btn-close";
+@import "./components/modal-form";

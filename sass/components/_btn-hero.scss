@@ -1,0 +1,39 @@
+.btn-hero {
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  color: $light-color;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background: $link-color;
+  width: 200px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  .btn-subscribe:hover,
+  .btn-subscribe:focus {
+    background: $link-color;
+    border-radius: 4px;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+    box-shadow: 0px 4px 4px $dark-color;
+    cursor: pointer;
+    border: none;
+    /*ефект зникання*/
+    /* transform: scale(2, 0.5);  */
+    /* opacity: 0; */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:active,
+  .btn-subscribe:active {
+    border: none;
+  }
+}

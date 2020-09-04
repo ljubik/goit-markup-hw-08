@@ -1,0 +1,31 @@
+.btn-close-modal {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding-top: 9px;
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-bottom: 9px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $light-color;
+  cursor: pointer;
+  z-index: 302;
+
+  &:hover,
+  &:focus,
+  &:hover > svg,
+  &:focus > svg {
+    color: $link-color;
+    transition: fill 0.2s ease-in;
+    fill: $link-color;
+    cursor: pointer;
+  }
+
+  > svg {
+    color: $dark-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
