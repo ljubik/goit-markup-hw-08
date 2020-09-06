@@ -99,7 +99,6 @@ a:hover, a:focus {
     width: 480px;
     padding-left: 31px;
     padding-right: 31px;
-    background-color: red;
   }
 }
 
@@ -108,7 +107,6 @@ a:hover, a:focus {
     width: 768px;
     padding-left: 39px;
     padding-right: 39px;
-    background-color: blue;
   }
 }
 
@@ -117,7 +115,6 @@ a:hover, a:focus {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: green;
   }
 }
 
@@ -139,14 +136,7 @@ a:hover, a:focus {
   display: block;
 }
 
-@media desktop {
-  .mobile-menu {
-    display: none;
-    pointer-events: none;
-  }
-}
-
-@media tablet {
+@media (min-width: 1200px) {
   .mobile-menu {
     display: none;
     pointer-events: none;

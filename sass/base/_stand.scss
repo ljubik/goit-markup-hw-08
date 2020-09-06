@@ -92,21 +92,21 @@ a {
 		width: 480px;
 		padding-left: 31px;
 		padding-right: 31px;
-		background-color: red;
+		// background-color: red;
 	}
 
 	@include for-size(tablet-landscape) {
 		width: 768px;
 		padding-left: 39px;
 		padding-right: 39px;
-		background-color: blue;
+		// background-color: blue;
 	}
 
 	@include for-size(desktop) {
 		width: 1200px;
 		padding-left: 15px;
 		padding-right: 15px;
-		background-color: green;
+		// background-color: green;
 	}
 }
 

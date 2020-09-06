@@ -1,12 +1,12 @@
 .mobile-menu {
 	display: block;
 
-	@media desktop {
+	@include for-size(desktop) {
 		display: none;
 		pointer-events: none;
 	}
 
-	@media tablet {
+	@include for-size(tablet) {
 		display: none;
 		pointer-events: none;
 	}
