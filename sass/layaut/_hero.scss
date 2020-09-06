@@ -1,15 +1,22 @@
 .hero {
-	padding-bottom: 200px;
-	padding-top: 200px;
-	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header_img_opt.png);
-	max-width: 1600px;
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/Header_img.png);
+
 	margin: 0 auto;
+	@include for-size(tablet) {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../images/tablet/Header_img.png);
+	}
 
 	@include for-size(desktop) {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
+		padding-bottom: 200px;
+		padding-top: 200px;
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../images/desktop/Header_img_opt.png);
+		max-width: 1600px;
 	}
 }
 

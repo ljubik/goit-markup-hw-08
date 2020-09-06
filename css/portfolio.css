@@ -12,7 +12,6 @@ html {
           box-sizing: inherit;
   margin: 0;
   padding: 0;
-  outline: 2px solid blue;
   -webkit-box-sizing: border-box;
   /* Нужно для мобильного WebKit */
   -moz-box-sizing: border-box;
