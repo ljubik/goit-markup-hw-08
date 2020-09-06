@@ -78,7 +78,13 @@
 								<div class="card-gallery">
 									<div class="gal-card-img">
 										<a href="#">
-											<img src="images/portfolio-1.jpg" alt="Photo portfolio" width="370" height="294" />
+											<picture>
+												<source srcset="./images/desktop/portfolio-1.jpg 1x, ./images/desktop/portfolio-1@2x.jpg 2x" media="(min-width: 1200px)" />
+												<source srcset="./images/tablet/portfolio-1.jpg 1x, ./images/tablet/portfolio-1@2x.jpg 2x" media="(min-width: 768px)" />
+												<source srcset="./images/mobile/portfolio-1.jpg 1x, ./images/mobile/portfolio-1@2x.jpg 2x" media="(max-width: 767px)" />
+												<img src="./images/desktop/portfolio-1.jpg" alt="Photo portfolio" width="370" height="294" />
+											  </picture>
+											
 										</a>
 										<div class="gal-card-overlay">
 											<div class="gal-card-actions">
@@ -101,6 +107,7 @@
 								<div class="card-gallery">
 									<div class="gal-card-img">
 										<a href="#">
+											
 											<img src="images/portfolio-2.jpg" alt="Photo portfolio" width="370" height="294" />
 										</a>
 										<div class="gal-card-overlay">
