@@ -87,13 +87,13 @@ a {
 	padding-right: 15px;
 	margin-right: auto;
 	margin-left: auto;
-	background-color: red;
+	// background-color: red;
 
 	@include for-size(tablet) {
 		width: 480px;
 		padding-left: 31px;
 		padding-right: 31px;
-		background-color: blue;
+		// background-color: blue;
 	}
 
 	@include for-size(tablet-landscape) {
@@ -107,7 +107,7 @@ a {
 		width: 1200px;
 		padding-left: 15px;
 		padding-right: 15px;
-		background-color: green;
+		// background-color: green;
 	}
 }
 

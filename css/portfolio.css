@@ -92,7 +92,6 @@ a:hover, a:focus {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  background-color: red;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -100,7 +99,6 @@ a:hover, a:focus {
     width: 480px;
     padding-left: 31px;
     padding-right: 31px;
-    background-color: blue;
   }
 }
 
@@ -117,7 +115,6 @@ a:hover, a:focus {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: green;
   }
 }
 

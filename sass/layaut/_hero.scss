@@ -1,22 +1,46 @@
 .hero {
-	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/Header_img.png);
-	margin: 0 auto;
+	padding-top: 118px;
+	padding-bottom: 118px;
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+		url(../images/mobile/Header_img.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 
-	@include for-size(tablet) {
-		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-			url(../images/tablet/Header_img.png);
+	@media screen and (min-device-pixel-ratio: 2) and (max-width: 480px),
+		screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px),
+		screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 480px) {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+			url(../images/mobile/Header_img@2x.png);
 	}
 
-	@include for-size(desktop) {
+	@include tablet {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+			url(../images/tablet/Header_img.png);
+		@media screen and (min-device-pixel-ratio: 2),
+			screen and (-webkit-min-device-pixel-ratio: 2),
+			screen and (-o-min-device-pixel-ratio: 2/1) {
+			background-image: linear-gradient(rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+				url(../images/tablet/Header_img@2x.png);
+		}
+	}
+
+	@include desktop {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
-		padding-bottom: 200px;
-		padding-top: 200px;
-		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-			url(../images/desktop/Header_img_opt.png);
 		max-width: 1600px;
+		padding-top: 200px;
+		padding-bottom: 200px;
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+			url(../images/desktop/Header_img.png);
+		@media screen and (min-device-pixel-ratio: 2),
+			screen and (-webkit-min-device-pixel-ratio: 2),
+			screen and (-o-min-device-pixel-ratio: 2/1) {
+			background-image: linear-gradient(rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+				url(../images/desktop/Header_img@2x.png);
+		}
 	}
 }
 
@@ -33,14 +57,20 @@
 	width: 100%;
 	font-weight: 900;
 	font-size: 26px;
-	line-height: 1.363;
+	line-height: 1.61;
 	text-transform: uppercase;
 	text-align: center;
 	margin: 0 auto;
 	padding-bottom: 30px;
 
+	@include for-size(tablet) {
+		font-size: 26px;
+		line-height: 1.61;
+	}
+
 	@include for-size(desktop) {
 		font-size: 44px;
+		line-height: 1.363;
 		display: flex;
 		justify-content: center;
 		align-items: center;
