@@ -29,7 +29,8 @@
 }
 
 .benefits-item {
-	margin: 10px;
+	margin: auto;
+	align-items: center;
 
 	&:not(:last-child) {
 		margin-bottom: 30px;
