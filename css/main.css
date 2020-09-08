@@ -1456,6 +1456,16 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .foot-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-pack: center;
@@ -1475,6 +1485,13 @@ footer {
   letter-spacing: 0.03em;
   width: 100%;
   text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .foot-address {
+    width: calc((100% - 2 * 15px) / 2);
+    margin: 15px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1503,6 +1520,18 @@ footer {
 
 .foot-social svg {
   color: #ffffff;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .foot-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: calc((100% - 2 * 15px) / 2);
+    margin: 15px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1564,6 +1593,16 @@ footer {
         -ms-flex-align: baseline;
             align-items: baseline;
   }
+}
+
+.foot-label {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .foot-logo {

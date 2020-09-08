@@ -22,6 +22,11 @@ footer {
 
 	@include for-size(desktop) {
 		display: flex;
+		flex-wrap: wrap;
+	}
+
+	@include for-size(desktop) {
+		display: flex;
 		flex-wrap: nowrap;
 		justify-content: center;
 		align-items: center;
@@ -36,6 +41,11 @@ footer {
 	letter-spacing: 0.03em;
 	width: 100%;
 	text-align: center;
+
+	@include for-size(tablet) {
+		width: calc((100% - 2 * 15px) / 2);
+		margin: 15px;
+	}
 
 	@include for-size(desktop) {
 		display: flex;
@@ -56,6 +66,13 @@ footer {
 
 	svg {
 		color: $light-color;
+	}
+
+	@include for-size(tablet) {
+		display: flex;
+		flex-wrap: wrap;
+		width: calc((100% - 2 * 15px) / 2);
+		margin: 15px;
 	}
 
 	@include for-size(desktop) {
@@ -95,6 +112,16 @@ footer {
 		width: 50%;
 		align-items: baseline;
 	}
+}
+
+.foot-label {
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	text-align: center;
 }
 
 .foot-logo {
