@@ -7,6 +7,10 @@
 		@media (max-width: #{$mobile - 1}) {
 			@content;
 		}
+	} @else if $range == mobile {
+		@media (min-width: $mobile) {
+			@content;
+		}
 	} @else if $range == tablet {
 		@media (min-width: 768px) and (max-width: 1199px) {
 			@content;

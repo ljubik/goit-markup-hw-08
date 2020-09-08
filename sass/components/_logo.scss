@@ -1,19 +1,27 @@
 .logo {
+	width: 100%;
 	font-family: "Raleway", sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 26px;
 	line-height: 1.192;
 	letter-spacing: 0.03em;
-	left: 215px;
-	top: 24px;
-	margin-right: 85px;
 	display: inline-block;
-	text-align: center;
 
 	@include for-size(tablet) {
 		display: flex;
 		flex-wrap: nowrap;
+		text-align: center;
+		align-items: baseline;
+		justify-content: baseline;
+		margin-right: 85px;
+		padding-top: 26px;
+	}
+
+	@include for-size(desktop) {
+		display: flex;
+		flex-wrap: nowrap;
+		text-align: left;
 	}
 }
 
