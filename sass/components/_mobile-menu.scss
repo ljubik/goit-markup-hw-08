@@ -1,29 +1,32 @@
-.mobile-menu {
-	display: block;
-
-	@include for-size(desktop) {
-		display: none;
-		pointer-events: none;
-	}
-
-	@include for-size(tablet) {
-		display: none;
-		pointer-events: none;
-	}
-}
-
 // .is-open {
 // 	display: none;
 // }
 
+.mobile-menu {
+	display: block;
+	background-color: blue;
+
+	@include for-size(tablet) {
+		display: none;
+		pointer-events: none;
+		background-color: green;
+	}
+
+	@include for-size(desktop) {
+		display: none;
+		pointer-events: none;
+		background-color: grey;
+	}
+}
+
 .mobile-menu-btn {
 	pointer-events: all;
-	display: flex;
+	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	width: 40px;
 	height: 40px;
-	position: absolute;
+	// position: absolute;
 	right: 15px;
 	top: 10px;
 	background-color: transparent;
@@ -36,6 +39,23 @@
 	&:hover {
 		cursor: pointer;
 	}
+
+	// .icon-cross {
+	// 	display: none;
+	// }
+
+	// &.is-open .icon-cross {
+	// 	display: block;
+	// }
+
+	// &.is-open .icon-menu {
+	// 	display: none;
+	// }
+
+	// .icon-menu-mob:hover,
+	// .icon-menu-mob:focus {
+	// 	fill: $link-color;
+	// }
 
 	&:hover > svg,
 	&:focus > svg {
@@ -68,6 +88,14 @@
 	z-index: 4;
 	padding-top: 60px;
 	padding-bottom: 60px;
+
+	@include for-size(tablet) {
+		position: relative;
+	}
+
+	@include for-size(desktop) {
+		position: relative;
+	}
 }
 
 .mobile-menu-window.is-open {
@@ -152,7 +180,7 @@
 	}
 }
 
-//@at-root
+//root
 
 // .menu-button {
 // 	display: inline-flex;

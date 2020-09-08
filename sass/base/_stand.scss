@@ -8,9 +8,9 @@ html {
 	box-sizing: inherit;
 	margin: 0;
 	padding: 0;
-	// outline: 2px solid blue; /* Нужно для розробки */
-	-webkit-box-sizing: border-box; /* Нужно для мобильного WebKit */
-	-moz-box-sizing: border-box; /* Нужно для Firefox */
+	outline: 2px solid blue; /* треба для розробки */
+	-webkit-box-sizing: border-box; /* треба для мобильного WebKit */
+	-moz-box-sizing: border-box; /* треба для Firefox */
 }
 
 @font-face {

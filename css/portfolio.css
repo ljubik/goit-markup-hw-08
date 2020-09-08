@@ -12,10 +12,12 @@ html {
           box-sizing: inherit;
   margin: 0;
   padding: 0;
+  outline: 2px solid blue;
+  /* треба для розробки */
   -webkit-box-sizing: border-box;
-  /* Нужно для мобильного WebKit */
+  /* треба для мобильного WebKit */
   -moz-box-sizing: border-box;
-  /* Нужно для Firefox */
+  /* треба для Firefox */
 }
 
 @font-face {
@@ -134,27 +136,30 @@ a:hover, a:focus {
 
 .mobile-menu {
   display: block;
-}
-
-@media (min-width: 1200px) {
-  .mobile-menu {
-    display: none;
-    pointer-events: none;
-  }
+  background-color: blue;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .mobile-menu {
     display: none;
     pointer-events: none;
+    background-color: green;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mobile-menu {
+    display: none;
+    pointer-events: none;
+    background-color: grey;
   }
 }
 
 .mobile-menu-btn {
   pointer-events: all;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -163,7 +168,6 @@ a:hover, a:focus {
           align-items: center;
   width: 40px;
   height: 40px;
-  position: absolute;
   right: 15px;
   top: 10px;
   background-color: transparent;
@@ -209,6 +213,18 @@ a:hover, a:focus {
   z-index: 4;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .mobile-menu-window {
+    position: relative;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mobile-menu-window {
+    position: relative;
+  }
 }
 
 .mobile-menu-window.is-open {
@@ -383,7 +399,12 @@ header {
 }
 
 .link-menu {
-  display: none;
+  margin-left: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -416,7 +437,12 @@ header {
 }
 
 .link-contact {
-  display: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-left: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -424,9 +450,6 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 50px;
-    padding-top: 32px;
-    padding-bottom: 32px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     font-size: 14px;

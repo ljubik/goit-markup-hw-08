@@ -1,5 +1,10 @@
 .link-menu {
-	display: none;
+	margin-left: 50px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 0.02em;
 
 	@include for-size(tablet) {
 		display: flex;
@@ -25,13 +30,15 @@
 }
 
 .link-contact {
-	display: none;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 0.02em;
+	margin-left: 50px;
+	padding-top: 32px;
+	padding-bottom: 32px;
 
 	@include for-size(tablet) {
 		display: flex;
-		margin-left: 50px;
-		padding-top: 32px;
-		padding-bottom: 32px;
 
 		flex-wrap: wrap;
 		font-size: 14px;
