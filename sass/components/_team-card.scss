@@ -13,17 +13,11 @@
 	margin-right: auto;
 
 	@include for-size(mobile) {
-		width: 450px;
-		display: flex;
-		// flex-wrap: wrap;
-		// align-items: center;
-		// justify-content: center;
-		// margin: -15px;
+		width: 100%;
 	}
 
 	@include for-size(tablet) {
-		width: 354px;
-		flex-wrap: nowrap;
+		width: 100%;
 	}
 
 	@include for-size(desktop) {
@@ -39,17 +33,6 @@
 		}
 	}
 }
-
-// .team-card-img {
-// 	width: 100%;
-
-// 	&picture {
-// 		display: flex;
-// 		flex-wrap: wrap;
-// 		justify-content: center;
-// 		justify-items: center;
-// 	}
-// }
 
 .team-card-info {
 	display: flex;

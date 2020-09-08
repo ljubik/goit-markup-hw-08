@@ -1026,6 +1026,7 @@ figure {
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .team-item {
+    width: 354px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
@@ -1039,7 +1040,6 @@ figure {
     -ms-flex-preferred-size: calc((100% - 8 * 15px) / 4);
         flex-basis: calc((100% - 8 * 15px) / 4);
     margin: 15px;
-    width: 270px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
@@ -1068,18 +1068,13 @@ figure {
 
 @media (min-width: 480px) {
   .card {
-    width: 450px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    width: 100%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .card {
-    width: 354px;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    width: 100%;
   }
 }
 

@@ -32,7 +32,7 @@
 	}
 
 	@include for-size(tablet) {
-		// width: 354px;
+		width: 354px;
 		flex-wrap: nowrap;
 		flex-basis: calc((100% - 4 * 15px) / 2);
 		margin: 15px;
@@ -41,7 +41,7 @@
 	@include for-size(desktop) {
 		flex-basis: calc((100% - 8 * 15px) / 4);
 		margin: 15px;
-		width: 270px;
+		// width: 270px;
 		flex-wrap: nowrap;
 	}
 }
