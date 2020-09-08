@@ -4,18 +4,16 @@
 
 .mobile-menu {
 	display: block;
-	background-color: blue;
+	// background-color: blue;
 
 	@include for-size(tablet) {
 		display: none;
 		pointer-events: none;
-		background-color: green;
 	}
 
 	@include for-size(desktop) {
 		display: none;
 		pointer-events: none;
-		background-color: grey;
 	}
 }
 
@@ -26,7 +24,7 @@
 	align-items: center;
 	width: 40px;
 	height: 40px;
-	// position: absolute;
+	position: absolute;
 	right: 15px;
 	top: 10px;
 	background-color: transparent;

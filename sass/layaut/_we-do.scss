@@ -63,23 +63,22 @@ figure {
 	width: 100%;
 }
 
-.we-do-h-text {
-	display: none;
+.we-do-h-text,
+.team-h-text,
+.clients-h-text {
+	// display: none;
+
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 1.167;
+	color: $dark-color;
+	text-align: center;
+	letter-spacing: 0.03em;
+	padding-bottom: 50px;
 
 	@include for-size(desktop) {
-		font-family: "Roboto", sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 36px;
-		line-height: 1.167;
-		color: $dark-color;
-		text-align: center;
-		letter-spacing: 0.03em;
-		padding-bottom: 50px;
-	}
-
-	.team-h-text,
-	.clients-h-text {
 		font-family: "Roboto", sans-serif;
 		font-style: normal;
 		font-weight: bold;

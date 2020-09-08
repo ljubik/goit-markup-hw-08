@@ -1,22 +1,47 @@
 .team {
-  background: $bkg-lite-color;
-  display: flex;
-  flex-wrap: nowrap;
-  padding-top: 94px;
-  padding-bottom: 94px;
+	background: $bkg-lite-color;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
 
 .team-container {
-  flex-wrap: nowrap;
+	flex-wrap: nowrap;
 }
 
 .team-list {
-  display: flex;
-  flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .team-item {
-  display: flex;
-  margin-left: 10px;
-  margin-right: 10px;
+	display: flex;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 100%;
+
+	@include for-size(mobile) {
+		// width: 450px;
+		display: flex;
+		// flex-wrap: wrap;
+		// align-items: center;
+		// justify-content: center;
+		// margin: -15px;
+	}
+
+	@include for-size(tablet) {
+		// width: 354px;
+		flex-wrap: nowrap;
+		flex-basis: calc((100% - 4 * 15px) / 2);
+		margin: 15px;
+	}
+
+	@include for-size(desktop) {
+		flex-basis: calc((100% - 8 * 15px) / 4);
+		margin: 15px;
+		width: 270px;
+		flex-wrap: nowrap;
+	}
 }
