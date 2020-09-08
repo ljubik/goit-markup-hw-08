@@ -31,7 +31,17 @@
 .benefits-item {
 	margin: 10px;
 
+	&:not(:last-child) {
+		margin-bottom: 30px;
+	}
+
+	@include for-size(tablet) {
+		flex-basis: calc((100% - 4 * 15px) / 2);
+		margin: 15px;
+	}
+
 	@include for-size(desktop) {
-		width: calc((100% - 30px * 2) / 4);
+		flex-basis: calc((100% - 8 * 15px) / 4);
+		margin: 15px;
 	}
 }
