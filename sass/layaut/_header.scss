@@ -3,8 +3,20 @@ header {
 }
 
 .flex-header {
-	// display: flex;
-	align-items: center;
 	padding-top: 16px;
 	padding-bottom: 16px;
+
+	@include for-size(tablet) {
+		padding-top: 32px;
+		padding-bottom: 32px;
+		display: flex;
+		flex-direction: row;
+	}
+
+	@include for-size(desktop) {
+		display: flex;
+		align-items: center;
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
 }

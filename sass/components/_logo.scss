@@ -10,6 +10,11 @@
 	margin-right: 85px;
 	display: inline-block;
 	text-align: center;
+
+	@include for-size(tablet) {
+		display: flex;
+		flex-wrap: nowrap;
+	}
 }
 
 .web {

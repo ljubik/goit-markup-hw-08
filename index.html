@@ -18,24 +18,35 @@
 		<!-- Шапка сайту, навігація -->
 		<header>
 			<div class="container flex">
-				<nav class="flex-header">
+				<nav class="flex-header mobile-menu">
 					<div class="logo">
-						<!-- <img src="./images/logo.svg" alt="Логотип компанії" /> -->
 						<a href="index.html" title="Main page">
 							<span class="web">Web</span>
 							<span class="studio">Studio</span>
 						</a>
 					</div>
-					<ul class="link-menu list">
+					<button 
+					type="button" 
+					class="menu-button" 
+					aria-expanded="false" 
+					aria-controls="menu-container"
+					data-menu-button> 
+						<svg class="icon-menu-mob" width="40" height="40" aria-label="Переключатель мобильного меню"> 
+							<use class="icon-cross" href="./images/sprite-mobile.svg#icon-cross"></use>
+							<use class="icon-menu" href="./images/sprite-mobile.svg#icon-menu"></use>
+						</svg>
+					</button>
+				<div class="mobile-menu-window menu-container" id="menu-container" data-menu> 
+					<ul class="link-menu list mobile-menu-nav-list">
 						<li class="item">
-							<a href="https://ljubik.github.io/goit-markup-hw-08/index.html" class="menu-line current">Cтудия</a>
+							<a href="https://ljubik.github.io/goit-markup-hw-08/index.html" class="menu-line mobile-nav-item current">Cтудия</a>
 						</li>
-						<li class="item"><a href="portfolio.html" class="menu-line">Портфолио</a></li>
-						<li class="item"><a href="#contacts" class="menu-line">Контакты</a></li>
+						<li class="item"><a href="portfolio.html" class="menu-line mobile-nav-item">Портфолио</a></li>
+						<li class="item"><a href="#contacts" class="menu-line mobile-nav-item">Контакты</a></li>
 					</ul>
-					<ul class="link-contact list">
+					<ul class="link-contact list mobile-header-contacts-list">
 						<li class="item">
-							<a href="mailto:info@devstudio.com" class="link">
+							<a href="mailto:info@devstudio.com" class="link mobile-header-contacts">
 								<span class="link-item">
 									<svg class="icon" width="10" height="16">
 										<use xlink:href="./images/sprite.svg#icon_mail"></use>
@@ -46,7 +57,7 @@
 							</a>
 						</li>
 						<li class="item">
-							<a href="tel:+380961111111" class="link">
+							<a href="tel:+380961111111" class="link mobile-header-contacts">
 								<span class="link-item">
 									<svg class="icon" width="10" height="16">
 										<use xlink:href="./images/sprite.svg#icon_mobile"></use>
@@ -57,39 +68,8 @@
 							</a>
 						</li>
 					</ul>
-				</nav>
-			</div>
-			<div class="mobile-menu">
-				
-				<button type="button" class="button mobile-menu-btn" data-menu-button >
-					<svg width="40" height="40" aria-label="мобільне меню" aria-expanded>
-						<use xlink:href="./images/sprite.svg#mobile_menu"></use>
-						<use xlink:href="./images/sprite.svg#icon_close"></use>
-					</svg>
-				</button>
- 
-				<div class="mobile-menu-window" data-menu>
-					<ul class="list mobile-menu-nav-list">
-						<li><a class="link mobile-nav-item active-page" href="https://ljubik.github.io/goit-markup-hw-08/index.html">Студия</a></li>
-						<li><a class="link mobile-nav-item" href="portfolio.html">Портфолио</a></li>
-						<li><a class="link mobile-nav-item" href="#contacts">Контакты</a></li>
-					</ul>
-					</nav>
-					<ul class="list mobile-header-contacts-list">
-						<li>
-							<a class="link mobile-header-contacts" href="mailto:info@devstudio.com">
-							<svg width="16" height="11">
-								<use href="./images/sprite.svg#icon_mail"></use>
-							</svg>info@devstudio.com</a>
-						</li>
-						<li>
-							<a class="link mobile-header-contacts" href="tel:+380961111111">
-								<svg width="10" height="15">
-									<use href="./images/sprite.svg#icon_mobile"></use>
-								</svg>+38 096 111 11 11</a>
-						</li>
-					</ul>
 				</div>
+				</nav>
 			</div>
 		</header>
 		<!-- Основний контент -->

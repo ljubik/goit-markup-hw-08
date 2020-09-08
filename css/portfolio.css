@@ -314,11 +314,35 @@ header {
 }
 
 .flex-header {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-top: 16px;
   padding-bottom: 16px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .flex-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .flex-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .nav {
@@ -340,6 +364,16 @@ header {
   text-align: center;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 .web {
   color: #2196f3;
 }
@@ -350,6 +384,21 @@ header {
 
 .link-menu {
   display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .link-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+    margin-left: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -368,6 +417,40 @@ header {
 
 .link-contact {
   display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .link-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  .link-contact .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .link-contact svg {
+    width: 16px;
+    height: 12px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .link-contact a {
+    color: #757575;
+    fill: #2196f3;
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 @media (min-width: 1200px) {
