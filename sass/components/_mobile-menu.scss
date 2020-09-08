@@ -1,10 +1,6 @@
-// .is-open {
-// 	display: none;
-// }
-
 .mobile-menu {
 	display: block;
-	// background-color: blue;
+	background-color: blue;
 
 	@include for-size(tablet) {
 		display: none;
@@ -28,37 +24,39 @@
 	right: 15px;
 	top: 10px;
 	background-color: transparent;
+	cursor: pointer;
+	border: none;
 
-	& > svg {
-		fill: $icon-color;
-		transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	// & > svg {
+	// 	fill: $icon-color;
+	// 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	// }
+
+	// &:hover {
+	// 	cursor: pointer;
+	// }
+
+	.icon-cross {
+		display: none;
 	}
 
-	&:hover {
-		cursor: pointer;
+	&.is-open .icon-cross {
+		display: block;
 	}
 
-	// .icon-cross {
-	// 	display: none;
-	// }
+	&.is-open .icon-menu {
+		display: none;
+	}
 
-	// &.is-open .icon-cross {
-	// 	display: block;
-	// }
-
-	// &.is-open .icon-menu {
-	// 	display: none;
-	// }
-
-	// .icon-menu-mob:hover,
-	// .icon-menu-mob:focus {
-	// 	fill: $link-color;
-	// }
-
-	&:hover > svg,
-	&:focus > svg {
+	.icon-menu-mob:hover,
+	.icon-menu-mob:focus {
 		fill: $link-color;
 	}
+
+	// &:hover > svg,
+	// &:focus > svg {
+	// 	fill: $link-color;
+	// }
 
 	&.is-open use:first-child {
 		display: none;
@@ -80,8 +78,8 @@
 .mobile-menu-window {
 	position: absolute;
 	top: 60px;
-	right: 0px;
-	display: none;
+	right: auto;
+	// display: none;
 	pointer-events: none;
 	z-index: 4;
 	padding-top: 60px;
@@ -104,12 +102,46 @@
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 }
 
+.menu-container {
+	background-color: $light-color;
+	width: 100%;
+
+	@media screen and (max-width: 767px) {
+		text-align: center;
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		z-index: 10;
+		border-top: 1px solid $dark-color;
+
+		&.is-open {
+			display: block;
+		}
+	}
+
+	@include for-size(tablet) {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		padding: 0;
+		margin: 0;
+	}
+
+	@include for-size(desktop) {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		padding: 0;
+	}
+}
+
 .mobile-menu-nav-list {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	height: auto;
-	width: 100%;
+	width: 90%;
 
 	.mobile-nav-item {
 		font-style: normal;

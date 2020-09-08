@@ -12,8 +12,6 @@ html {
           box-sizing: inherit;
   margin: 0;
   padding: 0;
-  outline: 2px solid blue;
-  /* треба для розробки */
   -webkit-box-sizing: border-box;
   /* треба для мобильного WebKit */
   -moz-box-sizing: border-box;
@@ -136,6 +134,7 @@ a:hover, a:focus {
 
 .mobile-menu {
   display: block;
+  background-color: blue;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -169,20 +168,24 @@ a:hover, a:focus {
   right: 15px;
   top: 10px;
   background-color: transparent;
-}
-
-.mobile-menu-btn > svg {
-  fill: #afb1b8;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mobile-menu-btn:hover {
   cursor: pointer;
+  border: none;
 }
 
-.mobile-menu-btn:hover > svg,
-.mobile-menu-btn:focus > svg {
+.mobile-menu-btn .icon-cross {
+  display: none;
+}
+
+.mobile-menu-btn.is-open .icon-cross {
+  display: block;
+}
+
+.mobile-menu-btn.is-open .icon-menu {
+  display: none;
+}
+
+.mobile-menu-btn .icon-menu-mob:hover,
+.mobile-menu-btn .icon-menu-mob:focus {
   fill: #2196f3;
 }
 
@@ -205,8 +208,7 @@ a:hover, a:focus {
 .mobile-menu-window {
   position: absolute;
   top: 60px;
-  right: 0px;
-  display: none;
+  right: auto;
   pointer-events: none;
   z-index: 4;
   padding-top: 60px;
@@ -234,6 +236,57 @@ a:hover, a:focus {
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 }
 
+.menu-container {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    border-top: 1px solid #212121;
+  }
+  .menu-container.is-open {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding: 0;
+  }
+}
+
 .mobile-menu-nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -246,7 +299,7 @@ a:hover, a:focus {
       -ms-flex-align: center;
           align-items: center;
   height: auto;
-  width: 100%;
+  width: 90%;
 }
 
 .mobile-menu-nav-list .mobile-nav-item {
