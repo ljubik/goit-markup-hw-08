@@ -168,7 +168,6 @@ a:hover, a:focus {
   right: 15px;
   top: 10px;
   background-color: transparent;
-  cursor: pointer;
   border: none;
 }
 
@@ -297,6 +296,16 @@ a:hover, a:focus {
 }
 
 .mobile-menu-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: auto;
   position: relative;
 }
@@ -316,12 +325,12 @@ a:hover, a:focus {
   color: #2196f3;
 }
 
-.mobile-menu-nav-list .mobile-nav-item.current::after {
+.mobile-menu-nav-list .mobile-nav-item .current::after {
   content: "";
   display: block;
   margin-top: 8px;
   height: 4px;
-  background-color: #2196f3;
+  background-color: red;
   border-radius: 2px;
 }
 
@@ -374,12 +383,19 @@ a:hover, a:focus {
   fill: #2196f3;
 }
 
+.mob-item {
+  margin-right: 50px;
+  position: relative;
+}
+
 .menu-line::after {
   position: absolute;
   content: "";
+  top: 45px;
   display: block;
   left: 0;
   bottom: 0;
+  width: 100%;
   height: 4px;
   border-radius: 2px;
   background-color: #2196f3;
@@ -396,14 +412,12 @@ a:hover, a:focus {
   opacity: 1;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
-  top: 18px;
 }
 
 .menu-line:hover::after {
   opacity: 1;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
-  top: 8px;
 }
 
 header {
