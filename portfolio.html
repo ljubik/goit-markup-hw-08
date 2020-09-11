@@ -19,18 +19,23 @@
 		<header>
 			<div class="container flex">
 				<nav class="flex-header">
-					<div class="logo">
-						<!-- <img src="./images/logo.svg" alt="Логотип компанії" /> -->
-						<a href="index.html" title="Main page">
-							<span class="web">Web</span>
-							<span class="studio">Studio</span>
-						</a>
-					</div>
+					<ul class="logo-menu list">
+						<li>
+							<div class="logo">
+								<!-- <img src="./images/logo.svg" alt="Логотип компанії" /> -->
+								<a href="index.html" title="Main page">
+									<span class="web">Web 
+										<span class="studio">Studio</span>
+									</span>
+								</a>
+							</div>
+						</li>
+					</ul>
 					<ul class="link-menu list">
 						<li class="item">
-							<a href="https://ljubik.github.io/goit-markup-hw-07/index.html" class="menu-line">Cтудия</a>
+							<a href="https://ljubik.github.io/goit-markup-hw-08/index.html" class="menu-line current">Cтудия</a>
 						</li>
-						<li class="item"><a href="portfolio.html" class="menu-line current">Портфолио</a></li>
+						<li class="item"><a href="portfolio.html" class="menu-line">Портфолио</a></li>
 						<li class="item"><a href="#contacts" class="menu-line">Контакты</a></li>
 					</ul>
 					<ul class="link-contact list">
@@ -41,7 +46,7 @@
 										<use xlink:href="./images/sprite.svg#icon_mail"></use>
 									</svg>
 								</span>
-
+			
 								<span>info@devstudio.com</span>
 							</a>
 						</li>
@@ -52,12 +57,54 @@
 										<use xlink:href="./images/sprite.svg#icon_mobile"></use>
 									</svg>
 								</span>
-
+			
 								<span>+38 096 111 11 11</span>
 							</a>
 						</li>
 					</ul>
 				</nav>
+			</div>
+			<div class="mobile-menu">
+			<button 
+			type="button" 
+			class="button mobile-menu-btn" 
+			aria-expanded="false" 
+			aria-controls="menu-container"
+			data-menu-button> 
+				<svg class="icon-menu-mob" width="40" height="40" aria-label="Переключатель мобильного меню"> 
+					<use class="icon-menu" href="./images/sprite-mobile.svg#icon-menu"></use>
+					<use class="icon-cross" href="./images/sprite-mobile.svg#icon-cross"></use>
+				</svg>
+			</button>
+				<div class="mobile-menu-window menu-container" id="menu-container" data-menu> 
+					<ul class="list mobile-menu-nav-list">
+						<li class="mob-item">
+							<a href="https://ljubik.github.io/goit-markup-hw-08/index.html" class="link menu-line mobile-nav-item current">Cтудия</a>
+						</li>
+						<li class="mob-item"><a href="portfolio.html" class="link menu-line mobile-nav-item">Портфолио</a></li>
+						<li class="mob-item"><a href="#contacts" class="link menu-line mobile-nav-item">Контакты</a></li>
+					</ul>
+					<ul class="list mobile-header-contacts-list">
+						<li class="mob-item">
+							<a href="mailto:info@devstudio.com" class="link mobile-header-contacts">
+								<span class="link-item">
+									<svg class="icon" width="16" height="11">
+										<use xlink:href="./images/sprite.svg#icon_mail"></use>
+									</svg>
+								info@devstudio.com</span>
+							</a>
+						</li>
+						<li class="mob-item">
+							<a href="tel:+380961111111" class="link mobile-header-contacts">
+								<span class="link-item">
+									<svg class="icon" width="10" height="15">
+										<use xlink:href="./images/sprite.svg#icon_mobile"></use>
+									</svg>
+								+38 096 111 11 11</span>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</header>
 		<!-- Основний контент -->
@@ -319,9 +366,9 @@
 						<li class="foot-address">
 							<div class="logo foot-logo">
 								<a href="index.html" title="Main page">
-									<span class="web">Web</span>
-									<span class="studio-down">Studio</span>
-									<br />
+									<span class="web">Web
+										<span class="studio-down">Studio</span>
+									</span>				
 								</a>
 							</div>
 							<div class="address">
@@ -391,7 +438,7 @@
 							</div>
 						</li>
 						<li class="foot-subscribe">
-							<label for="mail">Подпишитесь на рассылку</label>
+							<div class="foot-label" ><label for="mail">Подпишитесь на рассылку</label></div>
 
 							<form action="#" method="post" id="usrform" class="form-subscribe">
 								<input type="email" name="email" class="inpt-mail" id="mail" placeholder="E-mail" />
@@ -409,5 +456,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>
