@@ -45,6 +45,7 @@ footer {
 	@include for-size(tablet) {
 		width: calc((100% - 2 * 15px) / 2);
 		margin: 15px;
+		text-align: left;
 	}
 
 	@include for-size(desktop) {
@@ -52,6 +53,7 @@ footer {
 		flex-wrap: wrap;
 		width: 25%;
 		align-items: baseline;
+		text-align: left;
 	}
 }
 

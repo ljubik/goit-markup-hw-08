@@ -76,9 +76,8 @@
 .foot-pos-button {
 	display: flex;
 	align-items: center;
-	justify-items: center;
+	justify-content: center;
 	padding-top: 20px;
-	padding-left: 15%;
 
 	@include for-size(desktop) {
 		align-items: baseline;

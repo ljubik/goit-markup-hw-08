@@ -987,6 +987,7 @@ footer {
   .foot-address {
     width: calc((100% - 2 * 15px) / 2);
     margin: 15px;
+    text-align: left;
   }
 }
 
@@ -1001,6 +1002,7 @@ footer {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    text-align: left;
   }
 }
 
@@ -1302,9 +1304,10 @@ svg:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 20px;
-  padding-left: 15%;
 }
 
 @media (min-width: 1200px) {
