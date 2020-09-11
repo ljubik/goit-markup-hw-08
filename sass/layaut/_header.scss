@@ -3,12 +3,12 @@ header {
 }
 
 .flex-header {
-	padding-top: 16px;
-	padding-bottom: 16px;
+	// padding-top: 16px;
+	// padding-bottom: 16px;
 
 	@include for-size(tablet) {
-		padding-top: 32px;
-		padding-bottom: 32px;
+		// padding-top: 32px;
+		// padding-bottom: 32px;
 		display: flex;
 	}
 
@@ -16,8 +16,8 @@ header {
 		display: flex;
 		align-items: baseline;
 		justify-content: space-between;
-		padding-top: 32px;
-		padding-bottom: 32px;
+		// padding-top: 32px;
+		// padding-bottom: 32px;
 		width: 100%;
 	}
 }
