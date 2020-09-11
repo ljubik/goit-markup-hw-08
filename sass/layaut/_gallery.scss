@@ -6,8 +6,21 @@
 
 .gallery {
 	display: flex;
-	width: 1176px;
+	width: 100%;
 	padding-top: 40px;
+
+	@include for-size(tablet) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: left;
+		width: 768px;
+	}
+
+	@include for-size(desktop) {
+		display: flex;
+		width: 1176px;
+		padding-top: 40px;
+	}
 }
 
 .gallery-list {

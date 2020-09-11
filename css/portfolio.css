@@ -735,8 +735,32 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1176px;
+  width: 100%;
   padding-top: 40px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1176px;
+    padding-top: 40px;
+  }
 }
 
 .gallery-list {
