@@ -732,7 +732,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -754,8 +754,7 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 1176px;
-    padding-top: 40px;
+    width: 1200px;
   }
 }
 
@@ -773,12 +772,14 @@ header {
 .gal-item {
   margin-bottom: 30px;
   width: 100%;
+  min-width: 450px;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .gal-item {
     -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
         flex-basis: calc((100% - 4 * 15px) / 2);
+    min-width: 354px;
   }
 }
 
@@ -786,7 +787,7 @@ header {
   .gal-item {
     -ms-flex-preferred-size: calc((100% - 45px) / 3);
         flex-basis: calc((100% - 45px) / 3);
-    margin-bottom: 30px;
+    min-width: 370px;
   }
 }
 
@@ -802,6 +803,8 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .btn {
@@ -846,8 +849,8 @@ header {
   border: 1px solid #eeeeee;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 100%;
   max-width: 450px;
+  width: 100%;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
@@ -869,6 +872,7 @@ header {
             justify-content: center;
     justify-items: center;
     max-width: 354px;
+    width: 100%;
   }
 }
 
@@ -900,17 +904,17 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 30px;
-  margin-bottom: 18px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: #757575;
+  width: 100%;
 }
 
 .gal-card-img {
   position: relative;
+  overflow: hidden;
 }
 
 .gal-card-overlay {
@@ -970,9 +974,15 @@ header {
 }
 
 .gal-card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-left: 20px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding-left: 24px;
   max-width: 450px;
 }
 
@@ -1004,7 +1014,7 @@ header {
   }
 }
 
-.gallery-txt {
+.gallery-txt .gal-txt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1013,6 +1023,11 @@ header {
       -ms-flex-pack: left;
           justify-content: left;
   text-align: left;
+  padding-bottom: 20px;
+}
+
+.gal-title {
+  padding-top: 20px;
 }
 
 footer {

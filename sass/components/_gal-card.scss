@@ -2,8 +2,8 @@
 	background: $light-color;
 	border: 1px solid #eeeeee;
 	box-sizing: border-box;
-	width: 100%;
 	max-width: 450px;
+	width: 100%;
 	text-align: left;
 	margin-left: auto;
 	margin-right: auto;
@@ -16,6 +16,7 @@
 		justify-content: center;
 		justify-items: center;
 		max-width: 354px;
+		width: 100%;
 	}
 
 	@include for-size(desktop) {
@@ -37,18 +38,20 @@
 
 	p {
 		display: flex;
-		margin-top: 30px;
-		margin-bottom: 18px;
+		// margin-top: 30px;
+		// margin-bottom: 18px;
 		font-weight: normal;
 		font-size: 16px;
 		line-height: 1.875;
 		letter-spacing: 0.03em;
 		color: $body-color;
+		width: 100%;
 	}
 }
 
 .gal-card-img {
 	position: relative;
+	overflow: hidden;
 }
 
 .gal-card-overlay {
@@ -99,8 +102,10 @@
 }
 
 .gal-card-info {
+	display: flex;
 	flex-wrap: wrap;
-	padding-left: 20px;
+	justify-content: left;
+	padding-left: 24px;
 	max-width: 450px;
 
 	@include for-size(tablet) {
@@ -118,9 +123,14 @@
 	}
 }
 
-.gallery-txt {
+.gallery-txt .gal-txt {
 	display: flex;
 	color: $light-color;
 	justify-content: left;
 	text-align: left;
+	padding-bottom: 20px;
+}
+
+.gal-title {
+	padding-top: 20px;
 }
