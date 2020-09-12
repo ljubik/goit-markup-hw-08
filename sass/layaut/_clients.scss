@@ -108,6 +108,7 @@
 	color: $icon-color;
 	width: auto;
 	height: auto;
+	margin: auto;
 
 	@include for-size(desktop) {
 		display: flex;

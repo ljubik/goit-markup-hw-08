@@ -1483,6 +1483,7 @@ svg:hover, svg:focus {
   color: #afb1b8;
   width: auto;
   height: auto;
+  margin: auto;
 }
 
 @media (min-width: 1200px) {
