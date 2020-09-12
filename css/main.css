@@ -1520,6 +1520,14 @@ footer {
   color: #ffffff;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media (min-width: 1200px) {
   footer {
     display: -webkit-box;
@@ -1549,13 +1557,16 @@ footer {
           align-items: baseline;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .foot-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1587,9 +1598,9 @@ footer {
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .foot-address {
-    width: calc((100% - 2 * 15px) / 2);
-    margin: 15px;
+    padding-left: 10%;
     text-align: left;
+    width: 50%;
   }
 }
 
@@ -1629,8 +1640,8 @@ footer {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: calc((100% - 2 * 15px) / 2);
-    margin: 15px;
+    padding-left: 10%;
+    width: 50%;
   }
 }
 
@@ -1676,7 +1687,7 @@ footer {
 
 .foot-subscribe {
   text-transform: uppercase;
-  padding-top: 72px;
+  padding-bottom: 60px;
   width: 100%;
   position: relative;
 }
