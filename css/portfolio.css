@@ -852,8 +852,6 @@ header {
   max-width: 450px;
   width: 100%;
   text-align: left;
-  margin-left: auto;
-  margin-right: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -878,7 +876,6 @@ header {
 
 @media (min-width: 1200px) {
   .card-gallery {
-    margin-bottom: 30px;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -983,6 +980,7 @@ header {
       -ms-flex-pack: left;
           justify-content: left;
   padding-left: 24px;
+  padding-bottom: 20px;
   max-width: 450px;
 }
 
@@ -1023,7 +1021,6 @@ header {
       -ms-flex-pack: left;
           justify-content: left;
   text-align: left;
-  padding-bottom: 20px;
 }
 
 .gal-title {
