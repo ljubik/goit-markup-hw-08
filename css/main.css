@@ -185,6 +185,14 @@ img picture {
   border: none;
 }
 
+.mobile-menu-btn > svg {
+  fill: #212121;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 40px;
+  height: 40px;
+}
+
 .mobile-menu-btn .icon-cross {
   display: none;
 }
