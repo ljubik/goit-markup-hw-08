@@ -50,7 +50,7 @@
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
 	height: 90px;
-	min-width: 210px;
+	// min-width: 210px;
 	// margin: 15px;
 
 	@media screen and (max-width: 767px) {
@@ -79,7 +79,7 @@
 
 	@include for-size(desktop) {
 		flex-basis: calc((100% - 12 * 15px) / 6);
-		margin: 15px;
+		// margin: 15px;
 	}
 }
 

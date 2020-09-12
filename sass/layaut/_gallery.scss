@@ -8,12 +8,13 @@
 	display: flex;
 	width: 100%;
 	padding-top: 30px;
+	padding-right: 15px;
 
 	@include for-size(tablet) {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: left;
-		width: 768px;
+		min-width: 768px;
 	}
 
 	@include for-size(desktop) {
