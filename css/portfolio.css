@@ -1132,6 +1132,7 @@ footer {
         -ms-flex-align: baseline;
             align-items: baseline;
     text-align: left;
+    margin: 15px;
   }
 }
 
@@ -1172,6 +1173,10 @@ footer {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    padding-top: 72px;
+    padding-left: 0px;
+    padding-bottom: 60px;
+    margin: 15px;
   }
 }
 
@@ -1219,6 +1224,7 @@ footer {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    padding-top: 72px;
   }
 }
 
