@@ -3,6 +3,7 @@
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
+
 	padding-top: 60px;
 	padding-bottom: 60px;
 
@@ -26,8 +27,6 @@
 	margin-left: 10px;
 	margin-right: 10px;
 	width: 100%;
-	padding-bottom: 15px;
-	background: $light-color;
 
 	@include for-size(mobile) {
 		// width: 450px;
@@ -39,6 +38,7 @@
 		flex-wrap: nowrap;
 		flex-basis: calc((100% - 4 * 15px) / 2);
 		margin: 15px;
+		justify-content: space-around;
 	}
 
 	@include for-size(desktop) {

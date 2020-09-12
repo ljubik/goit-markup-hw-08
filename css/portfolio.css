@@ -12,8 +12,6 @@ html {
           box-sizing: inherit;
   margin: 0;
   padding: 0;
-  outline: 2px solid blue;
-  /* треба для розробки */
   -webkit-box-sizing: border-box;
   /* треба для мобильного WebKit */
   -moz-box-sizing: border-box;
@@ -437,6 +435,7 @@ img picture {
 }
 
 header {
+  border-style: none none solid;
   border: 1px solid #ececec;
 }
 
@@ -605,6 +604,9 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     font-size: 14px;
@@ -612,6 +614,8 @@ header {
     letter-spacing: 0.02em;
     padding-top: 16px;
     padding-bottom: 16px;
+    padding-left: 85px;
+    margin-right: 50px;
   }
 }
 
