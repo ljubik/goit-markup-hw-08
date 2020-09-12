@@ -12,6 +12,8 @@ html {
           box-sizing: inherit;
   margin: 0;
   padding: 0;
+  outline: 2px solid blue;
+  /* треба для розробки */
   -webkit-box-sizing: border-box;
   /* треба для мобильного WebKit */
   -moz-box-sizing: border-box;
@@ -94,7 +96,7 @@ a:hover, a:focus {
   margin-left: auto;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 480px) {
   .container {
     width: 480px;
     padding-left: 31px;
@@ -102,9 +104,10 @@ a:hover, a:focus {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .container {
-    width: 768px;
+    min-width: 768px;
+    width: 100%;
     padding-left: 39px;
     padding-right: 39px;
   }
@@ -112,7 +115,8 @@ a:hover, a:focus {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1200px;
+    min-width: 1200px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
   }

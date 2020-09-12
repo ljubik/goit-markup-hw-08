@@ -12,6 +12,8 @@ html {
           box-sizing: inherit;
   margin: 0;
   padding: 0;
+  outline: 2px solid blue;
+  /* треба для розробки */
   -webkit-box-sizing: border-box;
   /* треба для мобильного WebKit */
   -moz-box-sizing: border-box;
@@ -94,7 +96,7 @@ a:hover, a:focus {
   margin-left: auto;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 480px) {
   .container {
     width: 480px;
     padding-left: 31px;
@@ -102,9 +104,10 @@ a:hover, a:focus {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .container {
-    width: 768px;
+    min-width: 768px;
+    width: 100%;
     padding-left: 39px;
     padding-right: 39px;
   }
@@ -112,7 +115,8 @@ a:hover, a:focus {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1200px;
+    min-width: 1200px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -741,7 +745,6 @@ header {
   display: flex;
   width: 100%;
   padding-top: 30px;
-  padding-right: 15px;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -754,7 +757,6 @@ header {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
-    min-width: 768px;
   }
 }
 
@@ -780,7 +782,6 @@ header {
 
 .gal-item {
   margin-bottom: 30px;
-  width: 100%;
   min-width: 450px;
 }
 
@@ -922,6 +923,7 @@ header {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
+  width: 100%;
 }
 
 .card-gallery p {
@@ -933,7 +935,6 @@ header {
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: #757575;
-  width: 100%;
 }
 
 .gal-card-img {
@@ -955,6 +956,20 @@ header {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .gal-card-overlay {
+    max-width: 354px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gal-card-overlay {
+    max-width: 370px;
+    width: 100%;
+  }
 }
 
 .card-gallery:hover .gal-card-overlay {

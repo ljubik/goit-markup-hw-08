@@ -8,7 +8,7 @@ html {
 	box-sizing: inherit;
 	margin: 0;
 	padding: 0;
-	// outline: 2px solid blue; /* треба для розробки */
+	outline: 2px solid blue; /* треба для розробки */
 	-webkit-box-sizing: border-box; /* треба для мобильного WebKit */
 	-moz-box-sizing: border-box; /* треба для Firefox */
 }
@@ -89,22 +89,24 @@ a {
 	margin-left: auto;
 	// background-color: red;
 
-	@include for-size(tablet) {
+	@include for-size(mobile) {
 		width: 480px;
 		padding-left: 31px;
 		padding-right: 31px;
 		// background-color: blue;
 	}
 
-	@include for-size(tablet-landscape) {
-		width: 768px;
+	@include for-size(tablet) {
+		min-width: 768px;
+		width: 100%;
 		padding-left: 39px;
 		padding-right: 39px;
 		// background-color: blue;
 	}
 
 	@include for-size(desktop) {
-		width: 1200px;
+		min-width: 1200px;
+		width: 100%;
 		padding-left: 15px;
 		padding-right: 15px;
 		// background-color: green;
