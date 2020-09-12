@@ -40,7 +40,7 @@ footer {
 }
 
 .foot-address {
-	padding-top: 72px;
+	padding-top: 60px;
 	padding-bottom: 60px;
 	font-size: 14px;
 	line-height: 1.71;
@@ -63,12 +63,13 @@ footer {
 		align-items: baseline;
 		text-align: left;
 		margin: 15px;
+		padding-top: 72px;
 	}
 }
 
 .foot-social {
 	text-transform: uppercase;
-	padding-top: 72px;
+	padding-bottom: 60px;
 	width: 100%;
 
 	h4 {
@@ -115,6 +116,7 @@ footer {
 	width: 44px;
 	height: 44px;
 	align-items: baseline;
+	text-align: center;
 }
 
 .foot-subscribe {
@@ -144,10 +146,11 @@ footer {
 	font-family: "Roboto", sans-serif;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 14px;
+	// font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	text-align: center;
+	align-items: baseline;
 }
 
 .foot-logo {
