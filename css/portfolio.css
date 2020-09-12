@@ -1030,6 +1030,7 @@ header {
 
 footer {
   left: 1px;
+  right: 1px;
   background: #2f303a;
   color: #ffffff;
 }
