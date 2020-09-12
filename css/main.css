@@ -1982,7 +1982,7 @@ svg:focus {
 }
 
 .modal {
-  width: 528px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1990,7 +1990,7 @@ svg:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 528px;
+  max-width: 528px;
   min-height: 581px;
   height: 80%;
   padding: 40px;
