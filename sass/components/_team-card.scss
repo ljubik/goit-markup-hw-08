@@ -9,7 +9,7 @@
 	justify-content: center;
 	justify-items: center;
 
-	margin-bottom: 30px;
+	// margin-bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;
 
@@ -25,12 +25,12 @@
 		width: 270px;
 		padding-bottom: 30px;
 
-		&:first-child {
-			margin-bottom: 30px;
-			// margin-left: -15px;
-		}
+		// &:first-child {
+		// 	margin-bottom: 30px;
+		// 	// margin-left: -15px;
+		// }
 		&:last-child {
-			margin-bottom: 30px;
+			// margin-bottom: 30px;
 			margin-right: -15px;
 		}
 	}

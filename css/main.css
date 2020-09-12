@@ -1178,7 +1178,6 @@ figure {
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: center;
-  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1200,11 +1199,7 @@ figure {
     width: 270px;
     padding-bottom: 30px;
   }
-  .card:first-child {
-    margin-bottom: 30px;
-  }
   .card:last-child {
-    margin-bottom: 30px;
     margin-right: -15px;
   }
 }
