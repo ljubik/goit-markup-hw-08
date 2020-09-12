@@ -5,6 +5,7 @@ header {
 .flex-header {
 	// padding-top: 16px;
 	// padding-bottom: 16px;
+	position: relative;
 
 	@include for-size(tablet) {
 		// padding-top: 32px;
