@@ -1697,6 +1697,17 @@ footer {
   position: relative;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .foot-subscribe {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 16%;
+    padding-right: 16%;
+    width: 100%;
+  }
+}
+
 @media (min-width: 1200px) {
   .foot-subscribe {
     display: -webkit-box;
