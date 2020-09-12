@@ -1,13 +1,23 @@
 .btn-gal-group {
 	display: flex;
-	justify-content: center;
+	justify-content: start;
 	flex-wrap: wrap;
+
+	@include for-size(tablet) {
+		justify-content: center;
+	}
+
+	@include for-size(desktop) {
+		justify-content: center;
+	}
 }
 
 .btn {
 	font-family: "Roboto", sans-serif;
 	background: $bkg-lite-color;
 	border-radius: 4px;
+	margin-right: 8px;
+	margin-bottom: 15px;
 
 	&:hover,
 	&:focus {
