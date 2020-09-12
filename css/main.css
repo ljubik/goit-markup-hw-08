@@ -1173,6 +1173,8 @@ figure {
   margin-left: 10px;
   margin-right: 10px;
   width: 100%;
+  padding-bottom: 15px;
+  background: #ffffff;
 }
 
 @media (min-width: 480px) {
@@ -1223,12 +1225,6 @@ figure {
   margin-right: auto;
 }
 
-@media (min-width: 480px) {
-  .card {
-    width: 100%;
-  }
-}
-
 @media (min-width: 768px) and (max-width: 1199px) {
   .card {
     width: 100%;
@@ -1239,10 +1235,6 @@ figure {
   .card {
     width: 270px;
     padding-bottom: 30px;
-  }
-  .card:last-child {
-    margin-right: -15px;
-    margin-left: -15px;
   }
 }
 
@@ -1672,6 +1664,10 @@ footer {
     padding-left: 10%;
     width: 50%;
   }
+  .foot-social h4 {
+    text-align: left;
+    width: 100%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1700,6 +1696,8 @@ footer {
       -ms-flex-align: baseline;
           align-items: baseline;
   padding-top: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .foot-social-card {

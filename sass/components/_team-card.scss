@@ -13,10 +13,6 @@
 	margin-left: auto;
 	margin-right: auto;
 
-	@include for-size(mobile) {
-		width: 100%;
-	}
-
 	@include for-size(tablet) {
 		width: 100%;
 	}
@@ -31,8 +27,8 @@
 		// }
 		&:last-child {
 			// margin-bottom: 30px;
-			margin-right: -15px;
-			margin-left: -15px;
+			// margin-right: -15px;
+			// margin-left: -15px;
 		}
 	}
 }

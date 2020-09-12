@@ -1209,6 +1209,10 @@ footer {
     padding-left: 10%;
     width: 50%;
   }
+  .foot-social h4 {
+    text-align: left;
+    width: 100%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1237,6 +1241,8 @@ footer {
       -ms-flex-align: baseline;
           align-items: baseline;
   padding-top: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .foot-social-card {
