@@ -445,11 +445,7 @@ img picture {
 }
 
 header {
-  border-style: none none solid;
-  border: 1px solid #ececec;
-  border-style: none none solid;
-  border-color: rgba(255, 250, 250, 0) rgba(255, 255, 255, 0) #ececec;
-  border-width: 0px 0px 1px;
+  border-bottom: 1px solid #ececec;
 }
 
 .flex-header {
