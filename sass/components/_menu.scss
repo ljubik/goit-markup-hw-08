@@ -75,6 +75,10 @@
 		padding-bottom: 16px;
 		// padding-left: 85px;
 		// margin-right: 50px;
+
+		& .item {
+			margin-right: 0px;
+		}
 	}
 
 	@include for-size(desktop) {
