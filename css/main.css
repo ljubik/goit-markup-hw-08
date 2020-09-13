@@ -87,7 +87,9 @@ a:hover, a:focus {
 }
 
 img picture {
+  display: block;
   width: 100%;
+  height: auto;
 }
 
 .container {
