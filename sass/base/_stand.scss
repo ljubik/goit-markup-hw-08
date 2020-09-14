@@ -104,6 +104,7 @@ img picture {
 
 	@include for-size(tablet) {
 		min-width: 768px;
+		max-width: 1199px;
 		width: 100%;
 		padding-left: 39px;
 		padding-right: 39px;

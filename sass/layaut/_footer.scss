@@ -3,6 +3,7 @@ footer {
 	right: 1px;
 	background: $footer-bgcolor;
 	color: $light-color;
+	width: 100%;
 
 	@include for-size(tablet) {
 		justify-content: center;

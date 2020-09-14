@@ -111,6 +111,7 @@ img picture {
 @media (min-width: 768px) and (max-width: 1199px) {
   .container {
     min-width: 768px;
+    max-width: 1199px;
     width: 100%;
     padding-left: 39px;
     padding-right: 39px;
@@ -1564,6 +1565,7 @@ footer {
   right: 1px;
   background: #2f303a;
   color: #ffffff;
+  width: 100%;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
