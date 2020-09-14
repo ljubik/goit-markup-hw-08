@@ -16,7 +16,7 @@
 		// padding-top: 32px;
 		// padding-bottom: 32px;
 		padding-right: 30px;
-		padding-left: 85px;
+		padding-left: 50px;
 		font-size: 14px;
 		font-weight: 500;
 		letter-spacing: 0.02em;
@@ -36,9 +36,9 @@
 
 .link-contact {
 	display: none;
+	font-size: 12px;
 
 	@include for-size(mobile) {
-		font-size: 14px;
 		font-weight: 500;
 		letter-spacing: 0.02em;
 		// margin-left: 50px;
@@ -68,7 +68,7 @@
 		justify-content: right;
 
 		flex-wrap: wrap;
-		font-size: 14px;
+		font-size: 12px;
 		font-weight: 500;
 		letter-spacing: 0.02em;
 		padding-top: 16px;
