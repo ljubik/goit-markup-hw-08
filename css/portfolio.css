@@ -803,13 +803,15 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .gal-item {
   margin-bottom: 30px;
+  -ms-flex-preferred-size: calc((100% - 2 * 15px) / 1);
+      flex-basis: calc((100% - 2 * 15px) / 1);
   min-width: 450px;
 }
 
@@ -988,8 +990,7 @@ header {
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .gal-card-overlay {
-    max-width: 354px;
-    width: 100%;
+    width: 354px;
   }
 }
 

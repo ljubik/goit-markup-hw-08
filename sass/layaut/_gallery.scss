@@ -26,12 +26,13 @@
 .gallery-list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .gal-item {
 	margin-bottom: 30px;
 	// width: 100%;
+	flex-basis: calc((100% - 2 * 15px) / 1);
 	min-width: 450px;
 
 	@include for-size(tablet) {
